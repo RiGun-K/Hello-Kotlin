@@ -16,3 +16,16 @@ fun main() {
     val p1 = Position(0,0)
     val p2 = Position(10,10)
 }
+
+
+/* Constructor */
+
+/* Inheritance */
+open class Position2(var x:Int, var y:Int) {
+    constructor(n:Int):this(n,n)
+}
+class TPosition(x:Int, y:Int, var z:Int): Position2(x,y)
+
+fun main2() {
+    val t = TPosition(0,0,0)
+}
